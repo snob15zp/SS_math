@@ -1,0 +1,71 @@
+Dependencies for Project 'math_new', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x6475D4BF)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEBCE3E)
+I (..\Math_MATLAB_20230530\MathSlow.h)(0x6475B302)
+F (..\Math_MATLAB_20230530\FilterAC_s19s29_CG.c)(0x637537AB)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\filterac_s19s29_cg.o --omf_browse .\objects\filterac_s19s29_cg.crf --depend .\objects\filterac_s19s29_cg.d)
+I (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEBCE3E)
+I (..\Math_MATLAB_20230530\FilterAC_s19s29_CG.h)(0x6475A13C)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
+I (..\Math_MATLAB_20230530\rtwtypes.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterAC_s19s29_CG_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\multiword_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterAC_s19s29_CG_private.h)(0x637537AB)
+I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5CEBCE36)
+F (..\Math_MATLAB_20230530\FilterAC_s19s29_CG.h)(0x6475A13C)()
+F (..\Math_MATLAB_20230530\FilterAC_s19s29_CG_private.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\FilterAC_s19s29_CG_types.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\FilterC_s19s29_CG1.c)(0x637537AB)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\filterc_s19s29_cg1.o --omf_browse .\objects\filterc_s19s29_cg1.crf --depend .\objects\filterc_s19s29_cg1.d)
+I (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEBCE3E)
+I (..\Math_MATLAB_20230530\FilterC_s19s29_CG1.h)(0x637537AB)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
+I (..\Math_MATLAB_20230530\rtwtypes.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterC_s19s29_CG1_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\multiword_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterC_s19s29_CG1_private.h)(0x637537AB)
+I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5CEBCE36)
+F (..\Math_MATLAB_20230530\FilterC_s19s29_CG1.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\FilterC_s19s29_CG1_private.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\FilterC_s19s29_CG1_types.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\mathfast.c)(0x6475D5D8)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\mathfast.o --omf_browse .\objects\mathfast.crf --depend .\objects\mathfast.d)
+I (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEBCE3E)
+I (..\Math_MATLAB_20230530\MathSlow.h)(0x6475B302)
+I (..\Math_MATLAB_20230530\FilterC_s19s29_CG1.h)(0x637537AB)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
+I (..\Math_MATLAB_20230530\rtwtypes.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterC_s19s29_CG1_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\multiword_types.h)(0x637537AB)
+I (..\Math_MATLAB_20230530\FilterAC_s19s29_CG.h)(0x6475A13C)
+I (..\Math_MATLAB_20230530\FilterAC_s19s29_CG_types.h)(0x637537AB)
+F (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)()
+F (..\Math_MATLAB_20230530\MathSlow.c)(0x6475B302)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\mathslow.o --omf_browse .\objects\mathslow.crf --depend .\objects\mathslow.d)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
+I (..\Math_MATLAB_20230530\MathFast.h)(0x6475B302)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEBCE3E)
+I (..\Math_MATLAB_20230530\MathSlow.h)(0x6475B302)
+F (..\Math_MATLAB_20230530\MathSlow.h)(0x6475B302)()
+F (..\Math_MATLAB_20230530\multiword_types.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\rtmodel.h)(0x637537AB)()
+F (..\Math_MATLAB_20230530\rtwtypes.h)(0x637537AB)()
+F (RTE\Device\STM32G030C6Tx\startup_stm32g030xx.s)(0x5D315D98)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "STM32G030xx SETA 1"--list .\listings\startup_stm32g030xx.lst --xref -o .\objects\startup_stm32g030xx.o --depend .\objects\startup_stm32g030xx.d)
+F (RTE\Device\STM32G030C6Tx\system_stm32g0xx.c)(0x5D315D98)(--c99 --gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Math_MATLAB_20230530-I.\RTE\_Target_1-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32G030xx-o .\objects\system_stm32g0xx.o --omf_browse .\objects\system_stm32g0xx.crf --depend .\objects\system_stm32g0xx.d)
+I (D:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x5D315D98)
+I (D:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x5D315D98)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F2582)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBCE42)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F2582)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E835B22)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F2582)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F2582)
+I (D:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h)(0x5D315D98)

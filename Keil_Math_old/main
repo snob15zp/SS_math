@@ -1,0 +1,14 @@
+
+#include "MathFast.h"
+#include "MathSlow.h"
+
+main()
+{
+int i;
+while(1)
+{
+MS_evalute(1,2,3);
+MF_main(i);
+i++;
+};
+}
