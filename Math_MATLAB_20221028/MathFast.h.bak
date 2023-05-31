@@ -7,7 +7,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define D_SYSTICK_PERIOD_US   32     // period for systick timer in us, so 1000000ticks = 1second
+#define SYSTICK_PERIOD_US   32     // period for systick timer in us, so 1000000ticks = 1second
 #endif
 
 //--------------Alt Integrator & Fast Defines---------------------------

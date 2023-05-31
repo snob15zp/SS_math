@@ -19,6 +19,11 @@
 #define MS_D_offset_C_Peak_dB (-237.0202241) //0.1dB
 
 
+#define MS_D_AlertLevel_C_140bB_peak 153144400 //ADC bits, factor 2, fp26
+#define MS_D_AlertLevel_FastA (85)//0.1dB
+#define MS_D_AlertLevel_Overload     102469853 //ADC bits, fp27
+#define MS_D_AlertLevel_Dose MS_D_AlertLevel_FastA//0.1dB
+#define MS_D_AlertLevel_DoseM3dB (MS_D_AlertLevel_Dose-3)//0.1dB	
 
 
 
