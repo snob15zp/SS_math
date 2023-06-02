@@ -196,20 +196,20 @@ inline void MF_main(int32_t adcoutput)
 //	mathtest_fast();
 }
 ;
-inline void PeakC(int32_t in)
-{
-//	int32_t abs_in;
-};
+//inline void PeakC(int32_t in)
+//{
+////	int32_t abs_in;
+//};
 
 
 
-inline void test_MF_main_ADCEmul(void)
-{
-	static uint8_t i;
-	i++;
-	i&=0x1f;
-//	MF_main(sin1000[i]);
-}
+//inline void test_MF_main_ADCEmul(void)
+//{
+//	static uint8_t i;
+//	i++;
+//	i&=0x1f;
+////	MF_main(sin1000[i]);
+//}
 
 
 
