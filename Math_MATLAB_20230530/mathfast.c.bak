@@ -88,7 +88,7 @@ inline t_U_MF_int64 fastmulA(int32_t A);
 
 
 //#define D_FASTOLD 1
-#define D_FAST_NEW 1
+//#define D_FAST_NEW 1
 void MF_Int_Init(void)
 {
 #ifdef __NO_MATLAB__
@@ -336,7 +336,7 @@ static t_U_MF_int64 IFA_integrator_Old;
 
 int32_t fastA(uint64_t in);
 
-//void Int_fast_A(void) //TODO add matlab
+//void Int_fast_A(void)
 void KEYBRD_Handler(void)
 {
 // fast	

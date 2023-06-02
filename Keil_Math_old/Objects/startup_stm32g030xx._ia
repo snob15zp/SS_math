@@ -1,0 +1,6 @@
+--cpu Cortex-M0+ -g --apcs=interwork 
+-I.\RTE\_Target_1
+-ID:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-ID:\Keil_v5\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include
+--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "STM32G030xx SETA 1"
+--list .\listings\startup_stm32g030xx.lst --xref -o .\objects\startup_stm32g030xx.o --depend .\objects\startup_stm32g030xx.d "RTE\Device\STM32G030C6Tx\startup_stm32g030xx.s"

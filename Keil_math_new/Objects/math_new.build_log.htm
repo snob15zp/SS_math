@@ -21,22 +21,18 @@ Target DLL:      UL2CM3.DLL V1.162.16.0
 Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
-D:\user\DropBox_Nsel\ZERDLab Dropbox\CurrentProject1\SoundSensor\Firmware\git_SS2\math\Keil_math_new\math_new.uvprojx
+D:\user\DropBox_Nsel\ZERDLab Dropbox\CurrentProject1\SoundSensor\Firmware\git_SS2\math\SS_math\Keil_math_new\math_new.uvprojx
 Project File Date:  05/30/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling main.c...
-main.c(14): warning:  #1-D: last line of file ends without a newline
-  }
-main.c: 1 warning, 0 errors
-compiling FilterC_s19s29_CG1.c...
-compiling FilterAC_s19s29_CG.c...
-compiling MathSlow.c...
-compiling system_stm32g0xx.c...
+compiling mathfast.c...
+..\Math_MATLAB_20230530\mathfast.c(77): warning:  #177-D: variable "IntegratorIndex"  was declared but never referenced
+  static uint8_t IntegratorIndex;
+..\Math_MATLAB_20230530\mathfast.c: 1 warning, 0 errors
 linking...
-Program Size: Code=6160 RO-data=416 RW-data=224 ZI-data=1648  
+Program Size: Code=6120 RO-data=416 RW-data=224 ZI-data=1648  
 ".\Objects\math_new.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -67,7 +63,7 @@ Package Vendor: Keil
       Include file:  Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\arm\startup_stm32g030xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\system_stm32g0xx.c
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>
