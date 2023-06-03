@@ -184,7 +184,7 @@ void MF_main(int32_t adcoutput)
 #endif		
 	};
 	
-	i32_fastAC=fast(square);
+	//i32_fastAC=fast(square);
 //---------------------	Integrator_Hi & Fast alternative-------------------	
 	
 	
@@ -401,43 +401,43 @@ void fast_init(void)
 	MF_U_64_fastoutouter.i64=0;	
 }
 
-inline int32_t fast(uint64_t in)
-{
-	t_U_MF_int64 MF_U_64_fastMulResult;
-	t_U_MF_int64 MF_U_64_fastoutinner;
-	MF_U_64_fastoutinner.i64=(in>>FastInShift)+fastDelay;
-	MF_U_64_fastMulResult=fastmul(MF_U_64_fastoutouter.i32[1]);
-	fastDelay=(in>>FastInShift)+(MF_U_64_fastoutouter.i64-MF_U_64_fastMulResult.i64);	
-	MF_U_64_fastoutouter.i64= MF_U_64_fastoutinner.i64;
-	return MF_U_64_fastoutouter.i32[1];	
-}
-#define fastFactor 33550	
-inline t_U_MF_int64 fastmul(int32_t A)
-{ 
-t_U_MF_int64 t;
-uint32_t r0,r1; 
-uint32_t uA;
-	if (A<0) 
-	{	uA=-A;
-		r1=(uA>>16)*fastFactor;
-		r0=(uA&0xffff)*fastFactor;
-		t.u32[0]=r0<<(5);
-		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
-		r1=r1<<(32-(16-5));
-		t.u64+=r1;		
-		t.i64=-t.i64;
-	}
-	else
-	{ uA=A;
-		r1=(uA>>16)*fastFactor;
-		r0=(uA&0xffff)*fastFactor;
-		t.u32[0]=r0<<(5);
-		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
-		r1=r1<<(32-(16-5));
-		t.u64+=r1;
-	}
-	return t;
-};
+//inline int32_t fast(uint64_t in)
+//{
+//	t_U_MF_int64 MF_U_64_fastMulResult;
+//	t_U_MF_int64 MF_U_64_fastoutinner;
+//	MF_U_64_fastoutinner.i64=(in>>FastInShift)+fastDelay;
+//	MF_U_64_fastMulResult=fastmul(MF_U_64_fastoutouter.i32[1]);
+//	fastDelay=(in>>FastInShift)+(MF_U_64_fastoutouter.i64-MF_U_64_fastMulResult.i64);	
+//	MF_U_64_fastoutouter.i64= MF_U_64_fastoutinner.i64;
+//	return MF_U_64_fastoutouter.i32[1];	
+//}
+//#define fastFactor 33550	
+//inline t_U_MF_int64 fastmul(int32_t A)
+//{ 
+//t_U_MF_int64 t;
+//uint32_t r0,r1; 
+//uint32_t uA;
+//	if (A<0) 
+//	{	uA=-A;
+//		r1=(uA>>16)*fastFactor;
+//		r0=(uA&0xffff)*fastFactor;
+//		t.u32[0]=r0<<(5);
+//		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
+//		r1=r1<<(32-(16-5));
+//		t.u64+=r1;		
+//		t.i64=-t.i64;
+//	}
+//	else
+//	{ uA=A;
+//		r1=(uA>>16)*fastFactor;
+//		r0=(uA&0xffff)*fastFactor;
+//		t.u32[0]=r0<<(5);
+//		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
+//		r1=r1<<(32-(16-5));
+//		t.u64+=r1;
+//	}
+//	return t;
+//};
 
 
 //inline t_U_MF_int64 fastmul64(uint16_t K,int32_t A)
