@@ -84,33 +84,19 @@ static uint8_t IntegratorIndex;
 //void mathtest(void);
 //void mathtest_FilterC(void);
 //void mathtest_FilterAC(void);
-//void fast_init(void);
+void fast_init(void);
 void fastA_init(void);
 void Int_fast_A(void);
 //inline 
 t_U_MF_int64 fastmulA(int32_t A);
 //void mathtest_fast(void);			
 
-
-//#define D_FASTOLD 1
 #define D_FAST_NEW 1
-void MF_Int_Init(void)
-{
-#ifdef __NO_MATLAB__
-	NVIC_SetPriority(KEYBRD_IRQn, 1);
-  NVIC_EnableIRQ(KEYBRD_IRQn);	
-#endif
-}
-//void KEYBRD_Handler(void)
-//{
-// Int_fast_A();
-//}
-
 
 void MF_main_init(void)
 {
-	MF_Int_Init();
-//	fast_init();
+//	MF_Int_Init();
+	fast_init();
 	fastA_init();
   FilterAC_s19s29_CG_initialize();
 	FilterC_s19s29_CG1_initialize();
@@ -168,6 +154,11 @@ void MF_main(int32_t adcoutput)
 		   PeakC_max_current=0;
        catch_flag=0; 
 	}        
+
+	
+	//filterCout=FilterC_s19s29_CG1_Y.Output;
+	
+	//FilterAC_s19s29_CG_U.Input=FilterC_s19s29_CG1_Y.Output;
 	
 	filterAout=FilterAC_s19s29_CG_step_o(filterCout);
 	
@@ -184,7 +175,7 @@ void MF_main(int32_t adcoutput)
 	
 	t=Integrator.u32[1];
 	Integrator.u64+=(square);
-#ifdef D_FASTOLD	
+	
 //---------------------	Integrator_Hi & Fast-------------------------------
 	if (t>Integrator.u32[1]) 
   {Integrator_Hi++;
@@ -194,22 +185,13 @@ void MF_main(int32_t adcoutput)
 	};
 	
 	i32_fastAC=fast(square);
-#endif	
-	
-#ifdef  D_FAST_NEW	
 //---------------------	Integrator_Hi & Fast alternative-------------------	
 	
 	
 	if (!((IntegratorIndex++)&IntegratorIndexMask))
 	{ IntegratorData.u64=Integrator.u64;
-#ifndef __NO_MATLAB__	
-		Int_fast_A();//TODO FOR MATLAB
-#else
-   NVIC_SetPendingIRQ(KEYBRD_IRQn);	
-#endif	
+		Int_fast_A();
 	}
-#endif	
-//-------------------- Interrupt -------------------------------------------	
 	
 //=========================================================================	
 	//fast();//test
@@ -219,6 +201,10 @@ void MF_main(int32_t adcoutput)
 //	mathtest_fast();
 }
 ;
+//inline void PeakC(int32_t in)
+//{
+////	int32_t abs_in;
+//};
 
 
 
@@ -342,11 +328,8 @@ static t_U_MF_int64 IFA_integrator_Old;
 
 
 int32_t fastA(uint64_t in);
-#ifndef __NO_MATLAB__	
-void Int_fast_A(void) //TODO add matlab
-#else	
-void KEYBRD_Handler(void)
-#endif
+
+void Int_fast_A(void)
 {
 // fast	
 	uint64_t t;
@@ -408,53 +391,53 @@ uint32_t uA;
 	return t;
 };	
 
-////----------------fast-------------------
-//uint64_t fastDelay;
-//t_U_MF_int64 MF_U_64_fastoutouter;
+//----------------fast-------------------
+uint64_t fastDelay;
+t_U_MF_int64 MF_U_64_fastoutouter;
 
-//void fast_init(void)
-//{
-//  fastDelay=0;
-//	MF_U_64_fastoutouter.i64=0;	
-//}
+void fast_init(void)
+{
+  fastDelay=0;
+	MF_U_64_fastoutouter.i64=0;	
+}
 
-//inline int32_t fast(uint64_t in)
-//{
-//	t_U_MF_int64 MF_U_64_fastMulResult;
-//	t_U_MF_int64 MF_U_64_fastoutinner;
-//	MF_U_64_fastoutinner.i64=(in>>FastInShift)+fastDelay;
-//	MF_U_64_fastMulResult=fastmul(MF_U_64_fastoutouter.i32[1]);
-//	fastDelay=(in>>FastInShift)+(MF_U_64_fastoutouter.i64-MF_U_64_fastMulResult.i64);	
-//	MF_U_64_fastoutouter.i64= MF_U_64_fastoutinner.i64;
-//	return MF_U_64_fastoutouter.i32[1];	
-//}
-//#define fastFactor 33550	
-//inline t_U_MF_int64 fastmul(int32_t A)
-//{ 
-//t_U_MF_int64 t;
-//uint32_t r0,r1; 
-//uint32_t uA;
-//	if (A<0) 
-//	{	uA=-A;
-//		r1=(uA>>16)*fastFactor;
-//		r0=(uA&0xffff)*fastFactor;
-//		t.u32[0]=r0<<(5);
-//		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
-//		r1=r1<<(32-(16-5));
-//		t.u64+=r1;		
-//		t.i64=-t.i64;
-//	}
-//	else
-//	{ uA=A;
-//		r1=(uA>>16)*fastFactor;
-//		r0=(uA&0xffff)*fastFactor;
-//		t.u32[0]=r0<<(5);
-//		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
-//		r1=r1<<(32-(16-5));
-//		t.u64+=r1;
-//	}
-//	return t;
-//};
+inline int32_t fast(uint64_t in)
+{
+	t_U_MF_int64 MF_U_64_fastMulResult;
+	t_U_MF_int64 MF_U_64_fastoutinner;
+	MF_U_64_fastoutinner.i64=(in>>FastInShift)+fastDelay;
+	MF_U_64_fastMulResult=fastmul(MF_U_64_fastoutouter.i32[1]);
+	fastDelay=(in>>FastInShift)+(MF_U_64_fastoutouter.i64-MF_U_64_fastMulResult.i64);	
+	MF_U_64_fastoutouter.i64= MF_U_64_fastoutinner.i64;
+	return MF_U_64_fastoutouter.i32[1];	
+}
+#define fastFactor 33550	
+inline t_U_MF_int64 fastmul(int32_t A)
+{ 
+t_U_MF_int64 t;
+uint32_t r0,r1; 
+uint32_t uA;
+	if (A<0) 
+	{	uA=-A;
+		r1=(uA>>16)*fastFactor;
+		r0=(uA&0xffff)*fastFactor;
+		t.u32[0]=r0<<(5);
+		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
+		r1=r1<<(32-(16-5));
+		t.u64+=r1;		
+		t.i64=-t.i64;
+	}
+	else
+	{ uA=A;
+		r1=(uA>>16)*fastFactor;
+		r0=(uA&0xffff)*fastFactor;
+		t.u32[0]=r0<<(5);
+		t.u32[1]=(r0>>(32-5))+(r1>>(16-5));
+		r1=r1<<(32-(16-5));
+		t.u64+=r1;
+	}
+	return t;
+};
 
 
 //inline t_U_MF_int64 fastmul64(uint16_t K,int32_t A)

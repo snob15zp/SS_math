@@ -25,7 +25,6 @@ typedef uint32_t uint32_T;
 typedef int32_t  int32_T;
 typedef char     char_T;
 
-
 typedef union 
 {
 	int64_t  i64;
