@@ -93,7 +93,7 @@
       <flags>2</flags>
       <showCmd>3</showCmd>
       <MinPosition>
-        <xPos>-131</xPos>
+        <xPos>-1</xPos>
         <yPos>-1</yPos>
       </MinPosition>
       <MaxPosition>
@@ -150,7 +150,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>03000000660000000C010000D4020000</Data>
+          <Data>03000000660000000C01000028030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -170,7 +170,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>03000000660000000C010000D4020000</Data>
+          <Data>03000000660000000C01000028030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -450,7 +450,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>03000000660000000C010000D4020000</Data>
+          <Data>03000000660000000C01000028030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -470,7 +470,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>03000000660000000C010000D4020000</Data>
+          <Data>03000000660000000C01000028030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -490,7 +490,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB060000F6030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -530,7 +530,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB060000F6030000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1170,7 +1170,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB0600004A040000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1190,7 +1190,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB0600004A040000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1250,7 +1250,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB0600004A040000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1270,7 +1270,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0300000008030000FB060000F6030000</Data>
+          <Data>030000005C030000FB0600004A040000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1892,9 +1892,9 @@
       </Doc>
       <Doc>
         <Name>..\Math_MATLAB_20221028\MathFast.h</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>17</TopLine>
-        <CurrentLine>18</CurrentLine>
+        <ColumnNumber>2</ColumnNumber>
+        <TopLine>39</TopLine>
+        <CurrentLine>76</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -1904,6 +1904,15 @@
         <ColumnNumber>0</ColumnNumber>
         <TopLine>21</TopLine>
         <CurrentLine>33</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\Math_MATLAB_20221028\mathfast.c</Name>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>119</TopLine>
+        <CurrentLine>137</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

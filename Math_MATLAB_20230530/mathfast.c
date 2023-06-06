@@ -195,7 +195,7 @@ inline void MF_main(int32_t adcoutput)
 	if (!((IntegratorIndex++)&IntegratorIndexMask))
 	{ IntegratorData.u64=Integrator.u64;
 #ifndef __NO_MATLAB__	
-		//Int_fast_A();//TODO FOR MATLAB
+		Int_fast_A();//TODO FOR MATLAB
 #else
    NVIC_SetPendingIRQ(KEYBRD_IRQn);	
 #endif	
@@ -335,9 +335,11 @@ static t_U_MF_int64 IFA_integrator_Old;
 
 
 int32_t fastA(uint64_t in);
-
-//void Int_fast_A(void) //TODO add matlab
+#ifndef __NO_MATLAB__
+void Int_fast_A(void)
+#else
 void KEYBRD_Handler(void)
+#endif
 {
 // fast	
 	uint64_t t;

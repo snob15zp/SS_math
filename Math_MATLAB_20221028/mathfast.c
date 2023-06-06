@@ -125,7 +125,8 @@ void MF_main_reset(void)
 	IFA_integrator_Old.u64=0;
 };
 
-inline void MF_main(int32_t adcoutput)
+//inline 
+void MF_main(int32_t adcoutput)
 {
 	int32_t filterCout;
 	
