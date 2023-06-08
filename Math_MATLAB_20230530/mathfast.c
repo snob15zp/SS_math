@@ -374,7 +374,7 @@ inline int32_t fastA(uint64_t in)
 	MF_U_64_fastoutouterA.i64= MF_U_64_fastoutinner.i64;
 	return MF_U_64_fastoutouterA.i32[1];	
 }
-#define fastFactor 33550	
+#define fastFactor (33550*2)	
 //inline
 t_U_MF_int64 fastmulA(int32_t A)
 {  
