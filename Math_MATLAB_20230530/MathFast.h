@@ -16,7 +16,7 @@
 #define FastMulAdditionalShift 3
 
 #define ForIntegratorShift 2
-#define FastInShift (4+7)
+#define FastInShift (4+7-1)
 
 
 //======================================================================

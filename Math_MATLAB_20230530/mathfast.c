@@ -330,7 +330,7 @@ inline void test_MF_main_ADCEmul(void)
 
 //------------------------ALT fast integrator ---------------------------
 static uint64_t fastDelayA;
-static t_U_MF_int64 MF_U_64_fastoutouterA;
+ t_U_MF_int64 MF_U_64_fastoutouterA;
 static t_U_MF_int64 IFA_integrator_Old;
 
 
@@ -360,8 +360,10 @@ IntegratorA_Hi_out=IntegratorA_Hi;
 
 void fastA_init(void)
 {
-  fastDelayA=0;
-	MF_U_64_fastoutouterA.i64=0;	
+  
+	//MF_U_64_fastoutouterA.i64=0;	
+	MF_U_64_fastoutouterA.i32[1]=100000;
+	fastDelayA=MF_U_64_fastoutouterA.u64;
 }
 
 inline int32_t fastA(uint64_t in)
