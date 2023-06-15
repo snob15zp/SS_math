@@ -1,7 +1,14 @@
+#ifdef __debug__
+#include "main.h"
+#endif
+
 #include "MathFast.h"
 #include "MathSlow.h"
 #include "FilterC_s19s29_CG1.h"
 #include "FilterAC_s19s29_CG.h"
+
+
+
 
 
 #if	((D_ADCMODE==2)||(D_ADCMODE==3))	
@@ -374,6 +381,9 @@ inline int32_t fastA(uint64_t in)
 	MF_U_64_fastMulResult=fastmulA(MF_U_64_fastoutouterA.i32[1]);
 	fastDelayA=(in>>FastInShift)+(MF_U_64_fastoutouterA.i64-MF_U_64_fastMulResult.i64);	
 	MF_U_64_fastoutouterA.i64= MF_U_64_fastoutinner.i64;
+#ifdef __debug__
+	writetoarray(MF_U_64_fastoutouterA,fastDelayA,MF_U_64_fastoutinner,MF_U_64_fastMulResult);
+#endif
 	return MF_U_64_fastoutouterA.i32[1];	
 }
 #define fastFactor (33550*2)	

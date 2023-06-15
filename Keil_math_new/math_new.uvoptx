@@ -119,6 +119,11 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>UL2CM3</Key>
+          <Name>UL2CM3(-S0 -C0 -P0 ) -FN1 -FC1000 -FD20000000 -FF0STM32G0xx_128 -FL020000 -FS08000000 -FP0($$Device:STM32G070CBTx$CMSIS\Flash\STM32G0xx_128.FLM)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -132,44 +137,39 @@
           <Key>ARMDBGFLAGS</Key>
           <Name>-T0</Name>
         </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>UL2CM3</Key>
-          <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32G0xx_32 -FS08000000 -FL08000 -FP0($$Device:STM32G030C6Tx$CMSIS\Flash\STM32G0xx_32.FLM))</Name>
-        </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint>
         <Bp>
           <Number>0</Number>
-          <Type>1</Type>
-          <LineNumber>0</LineNumber>
-          <EnabledFlag>0</EnabledFlag>
+          <Type>0</Type>
+          <LineNumber>1</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\Keil_math_new\main.h</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>MF_U_64_fastoutouterA.i32[1]&lt;65536</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
-          <Type>1</Type>
-          <LineNumber>0</LineNumber>
-          <EnabledFlag>0</EnabledFlag>
+          <Type>0</Type>
+          <LineNumber>1</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>((MF_U_64_fastoutouterA.i32[1]&lt;65536)&amp;&amp;(i&gt;2))</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
@@ -185,39 +185,55 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression>i&gt;1687</Expression>
+          <Expression>MF_U_64_fastoutouterA.i32[1]&lt;65536</Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>343</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218536</Address>
+          <Type>1</Type>
+          <LineNumber>0</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Math_MATLAB_20230530\mathfast.c</Filename>
+          <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\math_new\../Math_MATLAB_20230530/mathfast.c\343</Expression>
+          <Expression>main_i&gt;1875</Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
-          <LineNumber>377</LineNumber>
+          <LineNumber>17</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219104</Address>
+          <Address>134219660</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Math_MATLAB_20230530\mathfast.c</Filename>
+          <Filename>.\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\math_new\../Math_MATLAB_20230530/mathfast.c\377</Expression>
+          <Expression>\\math_new\main.c\17</Expression>
+        </Bp>
+        <Bp>
+          <Number>5</Number>
+          <Type>1</Type>
+          <LineNumber>0</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>main_i&gt;37906</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -239,7 +255,12 @@
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>i</ItemText>
+          <ItemText>main_i,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>C_DARow</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -296,7 +317,7 @@
 
   <Group>
     <GroupName>main</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
