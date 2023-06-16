@@ -368,8 +368,8 @@ IntegratorA_Hi_out=IntegratorA_Hi;
 void fastA_init(void)
 {
   
-	//MF_U_64_fastoutouterA.i64=0;	
-	MF_U_64_fastoutouterA.i32[1]=100000;
+	MF_U_64_fastoutouterA.i64=0;	
+	//MF_U_64_fastoutouterA.i32[1]=100000;
 	fastDelayA=MF_U_64_fastoutouterA.u64;
 }
 
@@ -386,7 +386,7 @@ inline int32_t fastA(uint64_t in)
 #endif
 	return MF_U_64_fastoutouterA.i32[1];	
 }
-#define fastFactor (33550*2)	
+#define fastFactor (33550)	
 //inline
 t_U_MF_int64 fastmulA(int32_t A)
 {  

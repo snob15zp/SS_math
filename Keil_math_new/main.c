@@ -4,10 +4,13 @@
  int main_i;
 
 #define ADCclock 31250
-#define D_DARow 375
-#define D_main_i_min (1.117*ADCclock)
-#define D_main_i_max (1.213*ADCclock)
-const uint32_t C_DARow=D_main_i_max-D_main_i_min;
+//#define D_DARow 375
+#define D_DARow 312
+//#define D_main_i_min (1.117*ADCclock)
+//#define D_main_i_max (1.213*ADCclock)
+#define D_main_i_min (0.05*ADCclock)
+#define D_main_i_max (0.06*ADCclock)
+//const uint32_t C_DARow=(uint32_t )(C_t_max-C_t_min)*((float) ADCclock);
 
 t_U_MF_int64 DebugArray[D_DARow+2][5]; 
 

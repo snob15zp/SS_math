@@ -16,7 +16,7 @@
  */
 #define CMSIS_device_header "stm32g0xx.h"
 
-/*  Keil::Device:Startup:1.3.0 */
+/*  Keil::Device:Startup:1.4.0 */
 #define RTE_DEVICE_STARTUP_STM32G0XX    /* Device Startup for STM32G0 */
 
 

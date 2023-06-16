@@ -13,7 +13,7 @@
 //--------------Alt Integrator & Fast Defines---------------------------
 
 #define IntegratorIndexMask 0x7
-#define FastMulAdditionalShift 3
+#define FastMulAdditionalShift 4
 
 #define ForIntegratorShift 2
 #define FastInShift (4+7-1)
