@@ -27,7 +27,7 @@
 #define MS_D_AlertZone 30  //0.1dB
 #define MS_D_AlertLevel_C_140bB_peak (1400) //0.1dB -> 153144400 ADC bits, factor 2, fp26
 #define MS_D_AlertLevel_FastA        (850)//0.1dB
-#define MS_D_AlertLevel_Overload      72673654//(102469853/2) //ADC bits, fp27
+#define MS_D_AlertLevel_Overload      91326352 //137dB RMS 140dB peak//72673654//(102469853/2) //ADC bits, fp27//
 #define MS_D_AlertLevel_Dose          MS_D_AlertLevel_FastA//0.1dB
 //#define MS_D_AlertLevel_DoseM3dB     (MS_D_AlertLevel_Dose-(MS_D_AlertZone*MS_D_dBscale))//0.1dB	
 #define MS_D_CalibrationFactor         (10000) // -> fp14
